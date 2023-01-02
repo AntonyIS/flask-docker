@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  redis-server:
+    image : redis:latest
+
+  flask-app:
+    build: .
+    ports:
+      - "5000:5000"
